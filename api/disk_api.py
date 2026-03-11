@@ -22,7 +22,9 @@ class YandexDiskAPI:
     def upload_file(self, path, file_url):
         params = {"path": path, "url": file_url}
         return requests.post(
-            f"{self.BASE_URL}/resources/upload", headers=self.headers, params=params
+            f"{self.BASE_URL}/resources/upload",
+            headers=self.headers,
+            params=params,
         )
 
     def delete_resource(self, path, permanently=True):
