@@ -15,6 +15,10 @@ pip install poetry
 ```bash
 poetry install
 ```
+If poetry command is not found (common on Windows), use:
+```bash
+python -m poetry install
+```
 
 ## 4. Create ```.env``` file in the project root
 ```bash
@@ -26,4 +30,8 @@ Do not use your personal account for tests!
 ## 5. Run tests
 ```bash
 poetry run pytest -v
+```
+If poetry command is not found (common on Windows), use:
+```bash
+python -m poetry run pytest -v
 ```
